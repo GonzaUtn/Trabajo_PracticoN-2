@@ -1,0 +1,188 @@
+body{
+    background-color: rgb(221, 214, 214);
+    font-family: Arial;
+    
+}
+
+
+.titulo{
+
+    background-color: rgb(88, 87, 87);
+    border: 2px solid black;
+    border-radius: 0.4rem;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    
+
+
+}
+
+.subtitulos{
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(195, 223, 223);
+    border-bottom: 2px solid black;
+
+
+}
+
+.seccion1{
+    width: 98%;
+    font-size: 16px ;
+    padding: 20px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 0.4rem;
+    background-color: rgb(195, 223, 223);
+    
+    
+}
+
+.conteinerParrafo{
+    margin: 10px
+
+}
+
+.cita{
+    border: 6px double black;
+    padding: 5px;
+    border-radius: 0.4rem;
+    text-align: center;
+    width: 50vw;
+    transition: 0.4s ;
+    
+
+
+}
+
+.cita:hover{
+    cursor: pointer;
+    background-color: rgb(243, 242, 240);
+
+}
+
+
+
+.box1{
+    border: 2px solid black;
+    border-radius: 0.6rem;
+    padding: 13px;
+    box-shadow: 4px 2px 7px 4px  rgb(180, 176, 176);
+}
+
+.box2{
+    background-color: rgb(124, 202, 202);
+    border: 3px solid black;
+    border-radius: 0.6rem;
+    margin-top: 10px;
+    padding: 13px;
+    box-shadow: 4px 2px 7px 4px  rgb(180, 176, 176);
+}
+.relativo{
+    position: relative;
+    background-color: rgb(145, 240, 208);
+    padding: 13px;
+}
+
+.absoluto{
+    position: absolute;
+    background-color: rgb(12, 129, 104);
+    padding: 4px;
+    left: 50%;
+    color: white;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(150px , 1fr));
+    gap: 1rem;
+}
+
+.grid-container div{
+    background-color: rgb(223, 191, 245);
+    border-radius: 0.4rem;
+    padding: 10px;
+    text-align: center;
+    color: rgb(73, 21, 21);
+}
+
+
+
+.animacion{
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
+    background-color: rgb(248, 62, 6);
+}
+.animacion:hover{
+    background-color: rgb(97, 45, 30);
+}
+
+.mover{
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+    animation: mover 3s infinite;
+}
+
+footer {
+    display: flex;
+    justify-content:center;
+        
+    }
+
+footer img{
+   
+    margin-top: 10px;
+    
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 0.4rem;
+}
+footer div{
+    font-size: 20px;
+    width: 50vw;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 0.4rem;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        background-color: rgb(185, 219, 177);
+    }
+    .seccion1{
+        width: 95%; 
+        padding: 10px; 
+    }
+        
+}
+@keyframes mover {
+
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(300px);
+    }
+
+    50% { 
+        transform: translateX(150px);
+    }
+    75% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
